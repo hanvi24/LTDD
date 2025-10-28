@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "20158930019",
+    "project_id": "saisisse-5d854",
+    "storage_bucket": "saisisse-5d854.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20158930019:android:ab7eb0917ed3eab5c32c56",
+        "android_client_info": {
+          "package_name": "com.example.doan_ltdd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmGnzwyH_2A6k2DezZHInBk1Itp0YG9Gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
