@@ -11,9 +11,12 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Quản lý xuất nhập - bán hàng',
       theme: AppTheme.lightTheme,
-      initialRoute: AppRoutes.home,
-      getPages: AppRoutes.pages,
       debugShowCheckedModeBanner: false,
+
+      // ✅ Thay Home thành Login
+      initialRoute: AppRoutes.login,
+
+      getPages: AppRoutes.pages,
     );
   }
 }

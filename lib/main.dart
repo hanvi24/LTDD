@@ -1,16 +1,15 @@
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'app.dart';
 import 'di/injection_container.dart' as di;
+import 'package:sqflite/sqflite.dart';
+import 'package:path/path.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // ⚠️ XÓA DB CŨ (chạy 1 lần)
-  final dbPath = await getDatabasesPath();
-  final path = join(dbPath, 'app_database.db');
+  // ⚙️ Khởi tạo dependency và DB
+  await di.init();
 
-  await di.init(); // khởi tạo lại DB và dependency
   runApp(const MyApp());
 }
